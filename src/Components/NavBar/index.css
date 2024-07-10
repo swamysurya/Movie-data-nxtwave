@@ -1,0 +1,31 @@
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-style: solid;
+  width: 85%;
+  margin: auto;
+}
+
+.logo-name {
+  font-size: 25px;
+  font-family: 'Roboto';
+  margin: 0px;
+}
+
+.page-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000000;
+}
