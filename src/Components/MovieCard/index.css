@@ -1,0 +1,55 @@
+.list-item {
+  flex-grow: 1;
+  width: 100%;
+  padding: 10px;
+}
+
+@media screen and (min-width: 567px) {
+  .list-item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-item {
+    width: 25%;
+  }
+}
+
+.movie-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.poster {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 10px 14px 10px rgb(233, 226, 226);
+}
+
+.movie-title {
+  font-family: 'Roboto';
+  font-size: 20px;
+  margin: 0px;
+  line-height: 2;
+}
+
+.rating {
+  font-family: 'Roboto';
+  font-size: 18px;
+  margin: 0px;
+  line-height: 2;
+}
+
+.view-details-btn {
+  padding: 10px;
+  border-style: none;
+  outline: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 18px;
+  background-color: green;
+}

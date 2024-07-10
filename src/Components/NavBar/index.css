@@ -10,9 +10,10 @@
 }
 
 .logo-name {
-  font-size: 25px;
+  font-size: 15px;
   font-family: 'Roboto';
   margin: 0px;
+  font-weight: 700;
 }
 
 .page-links {
@@ -20,9 +21,18 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   list-style-type: none;
   padding-left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-name {
+    font-size: 25px;
+  }
+  .page-links {
+    gap: 20px;
+  }
 }
 
 .nav-link {

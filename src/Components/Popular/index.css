@@ -1,0 +1,37 @@
+
+
+.movie-cards-container {
+  list-style-type: none;
+  padding-left: 0px;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin-top: 50px 0px;
+}
+
+.prev-btn,
+.next-btn {
+  padding: 5px 10px;
+  color: #ffffff;
+  background-color: blue;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.page-no {
+  font-size: 18px;
+  font-weight: 500;
+}
