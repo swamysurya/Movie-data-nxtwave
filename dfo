@@ -1,0 +1,10 @@
+[1mdiff --git a/src/Components/Popular/index.css b/src/Components/Popular/index.css[m
+[1mindex 3b06656..312a48f 100644[m
+[1m--- a/src/Components/Popular/index.css[m
+[1m+++ b/src/Components/Popular/index.css[m
+[36m@@ -1,5 +1,3 @@[m
+[31m-[m
+[31m-[m
+ .movie-cards-container {[m
+   list-style-type: none;[m
+   padding-left: 0px;[m
