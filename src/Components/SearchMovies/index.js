@@ -23,16 +23,12 @@ const SearchMovies = () => {
   const onPrevClick = () => {
     if (pageNo !== 1) {
       setPageNo(prevPageNo => prevPageNo - 1)
-      // console.log(pageNo)
-      // onTriggerSearchQuery(pageNo)
     }
   }
 
   const onNextClick = () => {
     if (pageNo !== searchResponse.totalPages - 1) {
       setPageNo(prevPageNo => prevPageNo + 1)
-      // console.log(pageNo)
-      // onTriggerSearchQuery(pageNo)
     }
   }
   const renderSearchMovieList = () => (

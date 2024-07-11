@@ -20,7 +20,7 @@ const NavBar = props => {
 
   return (
     <nav className="nav-container">
-      <h1 className="logo-name">Movie DB</h1>
+      <h1 className="logo-name">MovieDB</h1>
       <ul className="page-links">
         <li>
           <Link to="/" className="nav-link">
@@ -41,7 +41,7 @@ const NavBar = props => {
       <div className="search-container">
         <input
           placeholder="search"
-          type="search"
+          type="text"
           value={searchInputValue}
           className="search-element"
           onChange={onChangeValue}
