@@ -16,22 +16,25 @@ const SearchMovies = () => {
 
   const {totalResults, results} = searchResponse
 
+  useEffect(() => {
+    onTriggerSearchQuery(pageNo)
+  }, [pageNo])
+
   const onPrevClick = () => {
     if (pageNo !== 1) {
       setPageNo(prevPageNo => prevPageNo - 1)
-      console.log(pageNo)
-      onTriggerSearchQuery(pageNo)
+      // console.log(pageNo)
+      // onTriggerSearchQuery(pageNo)
     }
   }
 
   const onNextClick = () => {
     if (pageNo !== searchResponse.totalPages - 1) {
       setPageNo(prevPageNo => prevPageNo + 1)
-      console.log(pageNo)
-      onTriggerSearchQuery(pageNo)
+      // console.log(pageNo)
+      // onTriggerSearchQuery(pageNo)
     }
   }
-
   const renderSearchMovieList = () => (
     <ul className="movie-cards-container">
       {results.map(eachItem => (
@@ -52,7 +55,7 @@ const SearchMovies = () => {
     }
     return renderSearchMovieList()
   }
-
+  console.log(pageNo)
   return (
     <>
       <NavBar />

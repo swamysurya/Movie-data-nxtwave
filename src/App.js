@@ -15,6 +15,7 @@ const App = () => {
   const [searchInputValue, setSearchInputValue] = useState('')
   const [searchResponse, setSearchResponse] = useState({})
   const [isLoading, setLoading] = useState(true)
+
   const onChangeSearchInputValue = searchText => setSearchInputValue(searchText)
 
   const updateSearchData = data => {

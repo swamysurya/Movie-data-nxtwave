@@ -13,8 +13,8 @@ const NavBar = props => {
   const onChangeValue = event => onChangeSearchInputValue(event.target.value)
 
   const {history} = props
-  const onClickSearch = event => {
-    onTriggerSearchQuery()
+  const onClickSearch = () => {
+    onTriggerSearchQuery(1)
     history.push('/search')
   }
 
