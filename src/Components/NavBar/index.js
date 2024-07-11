@@ -1,12 +1,22 @@
-import {Link} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 import {useContext} from 'react'
 import SearchContext from '../../context/searchContext'
 import './index.css'
 
-const NavBar = () => {
-  const {searchInputValue, onChangeSearchInputValue} = useContext(SearchContext)
+const NavBar = props => {
+  const {
+    searchInputValue,
+    onChangeSearchInputValue,
+    onTriggerSearchQuery,
+  } = useContext(SearchContext)
 
   const onChangeValue = event => onChangeSearchInputValue(event.target.value)
+
+  const {history} = props
+  const onClickSearch = event => {
+    onTriggerSearchQuery()
+    history.push('/search')
+  }
 
   return (
     <nav className="nav-container">
@@ -36,7 +46,8 @@ const NavBar = () => {
           className="search-element"
           onChange={onChangeValue}
         />
-        <button type="button" className="search-button">
+
+        <button type="button" className="search-button" onClick={onClickSearch}>
           Search
         </button>
       </div>
@@ -44,4 +55,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default withRouter(NavBar)

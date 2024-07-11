@@ -1,7 +1,8 @@
+import {Link} from 'react-router-dom'
 import './index.css'
 
 const MovieCard = ({movieDetails}) => {
-  const {posterPath, title, voteAverage} = movieDetails
+  const {posterPath, title, voteAverage, id} = movieDetails
 
   return (
     <li className="list-item">
@@ -13,9 +14,11 @@ const MovieCard = ({movieDetails}) => {
       <div className="movie-details-container">
         <h3 className="movie-title">{title}</h3>
         <p className="rating">rating: {voteAverage}</p>
-        <button className="view-details-btn" type="button">
-          View Details
-        </button>
+        <Link to={`movie/${id}`}>
+          <button className="view-details-btn" type="button">
+            View Details
+          </button>
+        </Link>
       </div>
     </li>
   )

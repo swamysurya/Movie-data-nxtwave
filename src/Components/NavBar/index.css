@@ -4,9 +4,12 @@
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  border-style: solid;
   width: 85%;
   margin: auto;
+  padding-bottom: 20px 0px;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  box-shadow: 0px 0px 20px rgb(211, 206, 206);
 }
 
 .logo-name {
@@ -38,4 +41,45 @@
 .nav-link {
   text-decoration: none;
   color: #000000;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.search-container {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-element {
+  border-radius: 5px 0px 0px 5px;
+  height: 100%;
+  outline: none;
+  font-family: 'Roboto';
+  padding-left: 10px;
+}
+
+.search-element:focus {
+  border-color: #34bf0d; /* Change border color on focus if desired */
+  outline: none; /* Ensure no outline on focus */
+}
+
+.search-button {
+  font-family: 'Roboto';
+  color: #ffffff;
+  background-color: forestgreen;
+  border: none;
+  outline: none;
+  height: 28px;
+  padding: 5px;
+  border-radius: 5px;
 }

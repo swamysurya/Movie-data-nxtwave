@@ -70,7 +70,7 @@ const Popular = () => {
     }
   }
 
-  console.log(pageNo)
+  // console.log(pageNo)
   return (
     <>
       <NavBar />
